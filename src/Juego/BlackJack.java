@@ -15,13 +15,8 @@ public class BlackJack {
 		TextIO.putln();
 		TextIO.putln("Bienvenido al juego de Blackjack.");
 		TextIO.putln();
-		TextIO.putln(" AUTORES");
-		TextIO.putln();
-		TextIO.putln("Ignacio Ribas Ramos");
-		TextIO.putln("Miguel Flecha Lozano");
-		TextIO.putln();
 		// Preguntamos por número de jugadores y por la cantidad con la que empiezan
-		TextIO.put("Numero de jugadores:");
+		TextIO.put("Numero de jugadores: ");
 		numero = TextIO.getlnInt();
 		TextIO.put("Con que cantidad empezara cada jugador (euros)?");
 		saldo = TextIO.getlnInt();
@@ -179,7 +174,7 @@ public class BlackJack {
 				TextIO.putln();
 				TextIO.putln("La banca muestra " +
 
-manoBanca.obtenerCarta(0));
+				manoBanca.obtenerCarta(0));
 				TextIO.putln();
 				// Carta o se planta?
 
@@ -240,8 +235,8 @@ manoBanca.obtenerCarta(0));
 				if(manoBanca.getBlackjackValor()>=manoJugador[i].getBlackjackValor())
 					beneficio=beneficio+manoJugador[i].apuesta;
 
-				else if(resultados[i+1]!=-1) beneficio=beneficio-
-						manoJugador[i].apuesta;
+				else if(resultados[i+1]!=-1) 
+					beneficio=beneficio-manoJugador[i].apuesta;
 
 			}
 			// Sabiendo las cartas que hay en la mesa calcularemos la esperanza de sacar cada una de las
